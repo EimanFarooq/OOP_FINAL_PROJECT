@@ -1,11 +1,10 @@
-#ifndef PARENT_H
+﻿#ifndef PARENT_H
 #define PARENT_H
 
 #include "Person.h"
 #include "Child.h"
 #include "RideOffer.h"
 #include "MyVector.h"
-#include <iostream>
 
 class Parent : public Person {
 private:
@@ -14,7 +13,7 @@ private:
 
 public:
     Parent(MyString f, MyString l, MyString e, MyString p, MyString a)
-        : Person(f, l, e, p, a, PARENT) {}
+        : Person(f, l, e, p, a, PARENT) {}  // Passes UserType
 
     void addChild(Child* child) {
         children.push_back(child);
@@ -25,7 +24,7 @@ public:
     }
 
     void displayInfo() const override {
-        cout << "Parent: " << getFullName() << endl;
+        cout << "Parent: " << getFullName() << endl;  // ✅ Removed .c_str()
     }
 };
 

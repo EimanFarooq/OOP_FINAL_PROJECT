@@ -28,7 +28,12 @@ public:
         return full;
     }
 
+    UserType getUserType() const { // ? Added getter
+        return userType;
+    }
+
     virtual ~Person() {}
 };
 
 #endif
+
