@@ -29,5 +29,20 @@
     <ClInclude Include="myvector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="child.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="log.txt" />
   </ItemGroup>
 </Project>
