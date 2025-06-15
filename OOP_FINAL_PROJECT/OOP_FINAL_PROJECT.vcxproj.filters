@@ -23,5 +23,11 @@
     <ClInclude Include="logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mystring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="myvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
