@@ -137,6 +137,7 @@
     <ClInclude Include="myvector.h" />
     <ClInclude Include="parent.h" />
     <ClInclude Include="person.h" />
+    <ClInclude Include="vehicleinfo.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="log.txt" />
