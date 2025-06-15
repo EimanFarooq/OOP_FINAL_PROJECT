@@ -44,6 +44,12 @@
     <ClInclude Include="vehicleinfo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="rideoffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="booking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="log.txt" />

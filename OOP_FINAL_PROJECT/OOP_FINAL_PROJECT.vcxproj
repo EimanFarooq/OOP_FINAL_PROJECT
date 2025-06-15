@@ -130,6 +130,7 @@
     <ClCompile Include="OOP_FINAL_PROJECT.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="booking.h" />
     <ClInclude Include="child.h" />
     <ClInclude Include="driver.h" />
     <ClInclude Include="logger.h" />
@@ -137,6 +138,7 @@
     <ClInclude Include="myvector.h" />
     <ClInclude Include="parent.h" />
     <ClInclude Include="person.h" />
+    <ClInclude Include="rideoffer.h" />
     <ClInclude Include="vehicleinfo.h" />
   </ItemGroup>
   <ItemGroup>
