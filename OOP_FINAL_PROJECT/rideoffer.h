@@ -4,6 +4,9 @@
 #include "MyString.h"
 #include <ctime>
 #include "Logger.h"
+#include <iostream>
+
+using namespace std;
 
 class Booking; // Forward declaration
 class Parent;
@@ -34,7 +37,15 @@ public:
     tm getRideTime() const { return rideTime; }
     Parent* getOwner() const { return owner; }
     MyString getPickupLocation() const { return pickupLocation; }
+    MyString getDropoffLocation() const { return dropoffLocation; }
+
+    void display() const {
+        cout << "Ride from " << pickupLocation << " to " << dropoffLocation << " at ";
+        char timeStr[26];
+        asctime_s(timeStr, sizeof(timeStr), &rideTime);
+        cout << timeStr;
+        cout << (isBooked() ? "Status: Booked\n" : "Status: Available\n");
+    }
 };
 
 #endif
-

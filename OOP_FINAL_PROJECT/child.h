@@ -2,23 +2,34 @@
 #define CHILD_H
 
 #include "MyString.h"
+#include "MyVector.h"
 #include <iostream>
-#include "Logger.h"
 
-class Parent; // Forward declaration
+using namespace std;
+
+class Parent;  // Forward declaration
 
 class Child {
 private:
+    MyString name;
     int age;
     MyVector<MyString> emergencyContacts;
     Parent* parent;
 
 public:
-    Child(int a, Parent* p) : age(a), parent(p) {}
+    Child(MyString name, int age, Parent* p)
+        : name(name), age(age), parent(p) {}
 
     void addEmergencyContact(MyString contact) {
         emergencyContacts.push_back(contact);
-        Logger::logEvent("Emergency contact added for child.");
+    }
+
+    void display() const {
+        cout << "Child: " << name << ", Age: " << age << "\n";
+        cout << "Emergency Contacts:\n";
+        for (int i = 0; i < emergencyContacts.size(); ++i) {
+            cout << "- " << emergencyContacts[i] << "\n";
+        }
     }
 };
 
