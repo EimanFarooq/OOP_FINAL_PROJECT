@@ -24,7 +24,7 @@ public:
     }
 
     void displayInfo() const override {
-        cout << "Parent: " << getFullName() << endl;  
+        cout << "Parent: " << getFullName() << endl; 
     }
 };
 
