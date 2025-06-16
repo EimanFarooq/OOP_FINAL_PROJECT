@@ -26,7 +26,6 @@ public:
         data = new T[capacity];
     }
 
-    // Copy constructor
     MyVector(const MyVector& other) : capacity(other.capacity), length(other.length) {
         data = new T[capacity];
         for (int i = 0; i < length; ++i) {
@@ -34,7 +33,6 @@ public:
         }
     }
 
-    // Assignment operator
     MyVector& operator=(const MyVector& other) {
         if (this != &other) {
             delete[] data;
@@ -57,7 +55,6 @@ public:
         return length;
     }
 
-    // Non-const index access
     T& operator[](int index) {
 #ifndef NDEBUG
         if (index < 0 || index >= length) {
@@ -68,7 +65,6 @@ public:
         return data[index];
     }
 
-    // Const index access for const objects
     const T& operator[](int index) const {
 #ifndef NDEBUG
         if (index < 0 || index >= length) {

@@ -17,6 +17,8 @@ private:
     Parent* parent;
 
 public:
+    Child(int a, Parent* p) : age(a), parent(p) {}
+
     Child(MyString name, int age, Parent* p)
         : name(name), age(age), parent(p) {}
 

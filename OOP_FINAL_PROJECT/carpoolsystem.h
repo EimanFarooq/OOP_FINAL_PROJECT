@@ -29,7 +29,7 @@ public:
                     if (users[j]->getUserType() == DRIVER) {
                         Driver* d = static_cast<Driver*>(users[j]);
                         Booking* b = new Booking(activeOffers[i], d);
-                        d->bookRide(b);
+                        d->addBooking(b);
                         activeOffers[i]->setBooking(b);
                         break; 
                     }

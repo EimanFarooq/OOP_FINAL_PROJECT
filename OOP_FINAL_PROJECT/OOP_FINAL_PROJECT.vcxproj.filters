@@ -18,6 +18,9 @@
     <ClCompile Include="OOP_FINAL_PROJECT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="booking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logger.h">

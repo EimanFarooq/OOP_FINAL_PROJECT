@@ -2,11 +2,9 @@
 #define BOOKING_H
 
 #include "RideOffer.h"
-#include "Driver.h"
 #include "MyString.h"
 #include <iostream>
-
-using namespace std;
+class Driver; 
 
 class Booking {
 private:
@@ -24,14 +22,7 @@ public:
         comment = c;
     }
 
-    void display() const {
-        cout << "Booking Info:\n";
-        if (offer)
-            offer->display();
-        if (driver)
-            driver->displayInfo();
-        cout << "Rating: " << rating << ", Comment: " << comment << "\n";
-    }
+    void display() const; 
 
     Driver* getDriver() const {
         return driver;
@@ -43,4 +34,3 @@ public:
 };
 
 #endif
-
