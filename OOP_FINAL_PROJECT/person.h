@@ -28,7 +28,7 @@ public:
         return full;
     }
 
-    UserType getUserType() const { // ? Added getter
+    UserType getUserType() const { 
         return userType;
     }
 

@@ -16,7 +16,7 @@ int main() {
     // Create Children
     Child* c1 = new Child(7, p1);
     Child* c2 = new Child(8, p2);
-    c1->addEmergencyContact("911");
+    c1->addEmergencyContact("123");
     c2->addEmergencyContact("1122");
 
     p1->addChild(c1);

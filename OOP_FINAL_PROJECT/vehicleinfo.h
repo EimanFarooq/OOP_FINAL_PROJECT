@@ -13,8 +13,12 @@ protected:
 public:
     VehicleInfo(MyString m, int c) : model(m), capacity(c) {}
     virtual void display() const = 0;
-    MyString getModel() const { return model; }
-    int getCapacity() const { return capacity; }
+    MyString getModel() const {
+        return model; 
+    }
+    int getCapacity() const {
+        return capacity; 
+    }
     virtual ~VehicleInfo() {}
 };
 

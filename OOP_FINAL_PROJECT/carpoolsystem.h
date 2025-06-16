@@ -31,7 +31,7 @@ public:
                         Booking* b = new Booking(activeOffers[i], d);
                         d->bookRide(b);
                         activeOffers[i]->setBooking(b);
-                        break; // early termination
+                        break; 
                     }
                 }
             }

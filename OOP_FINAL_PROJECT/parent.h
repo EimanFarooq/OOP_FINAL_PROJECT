@@ -13,7 +13,7 @@ private:
 
 public:
     Parent(MyString f, MyString l, MyString e, MyString p, MyString a)
-        : Person(f, l, e, p, a, PARENT) {}  // Passes UserType
+        : Person(f, l, e, p, a, PARENT) {}
 
     void addChild(Child* child) {
         children.push_back(child);
@@ -24,7 +24,7 @@ public:
     }
 
     void displayInfo() const override {
-        cout << "Parent: " << getFullName() << endl;  // ✅ Removed .c_str()
+        cout << "Parent: " << getFullName() << endl;  
     }
 };
 

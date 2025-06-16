@@ -1,10 +1,13 @@
-﻿#ifndef DRIVER_H
+﻿#ifndef DRIVER_H 
 #define DRIVER_H
 
 #include "Person.h"
 #include "Booking.h"
 #include "VehicleInfo.h"
 #include "MyVector.h"
+#include <iostream>
+
+using namespace std;
 
 class Driver : public Person {
 private:
@@ -21,15 +24,24 @@ public:
         availability.push_back(timeSlot);
     }
 
-    void bookRide(Booking* booking) {
-        bookings.push_back(booking);
+    void addBooking(Booking* b) {
+        bookings.push_back(b);
     }
 
     void displayInfo() const override {
         cout << "Driver: " << getFullName() << endl;
-        if (vehicle) vehicle->display();
+        cout << "Email: " << email << ", Phone: " << phoneNumber << ", Address: " << address << endl;
+        if (vehicle) {
+            vehicle->display();
+        }
+
+        cout << "Bookings:\n";
+        for (int i = 0; i < bookings.size(); ++i) {
+            if (bookings[i]) {
+                bookings[i]->display();
+            }
+        }
     }
 };
 
 #endif
-

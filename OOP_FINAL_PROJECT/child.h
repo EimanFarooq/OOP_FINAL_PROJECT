@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class Parent;  // Forward declaration
+class Parent; 
 
 class Child {
 private:

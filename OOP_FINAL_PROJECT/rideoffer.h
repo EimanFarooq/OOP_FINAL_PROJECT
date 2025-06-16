@@ -8,7 +8,7 @@
 
 using namespace std;
 
-class Booking; // Forward declaration
+class Booking; 
 class Parent;
 
 class RideOffer {
@@ -34,10 +34,18 @@ public:
         Logger::logEvent("RideOffer booked.");
     }
 
-    tm getRideTime() const { return rideTime; }
-    Parent* getOwner() const { return owner; }
-    MyString getPickupLocation() const { return pickupLocation; }
-    MyString getDropoffLocation() const { return dropoffLocation; }
+    tm getRideTime() const { 
+        return rideTime;
+    }
+    Parent* getOwner() const {
+        return owner;
+    }
+    MyString getPickupLocation() const {
+        return pickupLocation; 
+    }
+    MyString getDropoffLocation() const {
+        return dropoffLocation; 
+    }
 
     void display() const {
         cout << "Ride from " << pickupLocation << " to " << dropoffLocation << " at ";
